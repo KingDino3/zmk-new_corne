@@ -140,10 +140,10 @@
 
         Space_Layer {
             bindings = <
-&trans  &sys_reset  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &trans                             &rgb_ug RGB_ON                    &kp LG(C)        &kp ESCAPE       &kp COLON  &trans       &trans  &trans
-&trans  &trans      &trans        &trans        &kp LEFT_WIN  &trans            &rgb_ug RGB_BRD  &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &kp LG(K_PASTE)  &kp ENTER        &kp SLASH  &kp PERCENT  &trans  &trans
-&trans  &trans      &trans        &trans        &trans        &trans  &trans                     &rgb_ug RGB_OFF                   &kp LG(X)        &kp EXCLAMATION  &trans     &trans       &trans  &trans
-                                  &trans        &none         &trans                                                               &trans           &trans           &trans
+&trans  &sys_reset  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &trans                             &rgb_ug RGB_ON                    &kp LG(C)  &kp ESCAPE       &kp COLON  &trans       &trans  &trans
+&trans  &trans      &trans        &trans        &kp LEFT_WIN  &trans            &rgb_ug RGB_BRD  &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &kp LG(V)  &kp ENTER        &kp SLASH  &kp PERCENT  &trans  &trans
+&trans  &trans      &trans        &trans        &trans        &trans  &trans                     &rgb_ug RGB_OFF                   &kp LG(X)  &kp EXCLAMATION  &trans     &trans       &trans  &trans
+                                  &trans        &none         &trans                                                               &trans     &trans           &trans
             >;
 
             sensor-bindings = <&rgb_encoder>;
