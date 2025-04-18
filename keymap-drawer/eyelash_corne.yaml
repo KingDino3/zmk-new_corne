@@ -366,7 +366,7 @@ layers:
   - RGB BRD
   - RGB EFF
   - RGB BRI
-  - Gui+PASTE
+  - {t: V, h: '$$mdi:apple-keyboard-command$$'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: /, s: '?'}
   - '%'
