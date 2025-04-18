@@ -75,6 +75,7 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
+            label = "mouse";
         };
 
         arrows {
@@ -87,18 +88,20 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
+            label = "arrows";
         };
 
         symbols {
             display-name = "Fn";
             bindings = <
-&trans  &trans         &trans        &trans        &trans  &trans                                      &mmv MOVE_UP                     &trans           &kp LS(UNDER)  &kp LS(PIPE)  &kp SQT      &trans      &trans
-&trans  &kp LS(CARET)  &kp LS(STAR)  &kp LS(AMPS)  &none   &kp LS(AT)                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LS(POUND)    &kp MINUS      &kp FSLH      &kp LS(DQT)  &kp DOLLAR  &trans
-&trans  &trans         &trans        &trans        &trans  &trans        &kp C_MUTE                    &mmv MOVE_DOWN                   &trans           &kp LS(TILDE)  &kp BSLH      &kp GRAVE    &trans      &trans
-                                     &trans        &trans  &kp C_VOL_DN                                                                 &kp C_VOLUME_UP  &trans         &trans
+&trans  &trans         &trans        &trans        &trans  &trans                                      &mmv MOVE_UP                     &kp EQUAL            &kp LS(UNDER)  &kp LS(PIPE)  &kp SQT      &trans      &trans
+&trans  &kp LS(CARET)  &kp LS(STAR)  &kp LS(AMPS)  &none   &kp LS(AT)                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LS(POUND)        &kp MINUS      &kp FSLH      &kp LS(DQT)  &kp DOLLAR  &trans
+&trans  &trans         &trans        &trans        &trans  &trans        &kp C_MUTE                    &mmv MOVE_DOWN                   &kp LS(EXCLAMATION)  &kp LS(TILDE)  &kp BSLH      &kp GRAVE    &trans      &trans
+                                     &trans        &trans  &kp C_VOL_DN                                                                 &kp C_VOLUME_UP      &trans         &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
+            label = "symbols";
         };
 
         brackets {
@@ -110,15 +113,18 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            label = "brackets";
         };
 
         numbers {
             bindings = <
-&trans  &trans  &trans  &trans     &trans     &trans                       &trans          &kp PLUS   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp SLASH        &trans
+&trans  &trans  &trans  &trans     &trans     &trans                       &trans          &kp PLUS   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MULTIPLY  &trans
 &trans  &trans  &none   &kp MINUS  &kp ASTRK  &kp ENTER            &trans  &trans  &trans  &kp MINUS  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_NUMBER_0  &trans
-&trans  &trans  &trans  &trans     &trans     &trans     &trans            &trans          &kp EQUAL  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp ASTERISK     &trans
+&trans  &trans  &trans  &trans     &trans     &trans     &trans            &trans          &kp EQUAL  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DIVIDE    &trans
                         &trans     &trans     &trans                                       &trans     &trans           &trans
             >;
+
+            label = "numpad";
         };
 
         FKeys {
@@ -128,17 +134,20 @@
 &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans                                     &trans  &trans  &trans
             >;
+
+            label = "FKeys";
         };
 
         Space_Layer {
             bindings = <
-&trans  &sys_reset  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR                             &rgb_ug RGB_ON                    &kp K_COPY   &kp ESCAPE       &kp COLON  &trans       &trans  &trans
-&trans  &trans      &trans        &trans        &kp LEFT_WIN  &trans                &rgb_ug RGB_BRD  &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &kp K_PASTE  &kp ENTER        &kp SLASH  &kp PERCENT  &trans  &trans
-&trans  &trans      &trans        &trans        &trans        &trans      &trans                     &rgb_ug RGB_OFF                   &kp K_CUT    &kp EXCLAMATION  &trans     &trans       &trans  &trans
-                                  &trans        &none         &trans                                                                   &trans       &trans           &trans
+&trans  &sys_reset  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &trans                             &rgb_ug RGB_ON                    &kp K_COPY   &kp ESCAPE       &kp COLON  &trans       &trans  &trans
+&trans  &trans      &trans        &trans        &kp LEFT_WIN  &trans            &rgb_ug RGB_BRD  &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &kp K_PASTE  &kp ENTER        &kp SLASH  &kp PERCENT  &trans  &trans
+&trans  &trans      &trans        &trans        &trans        &trans  &trans                     &rgb_ug RGB_OFF                   &kp K_CUT    &kp EXCLAMATION  &trans     &trans       &trans  &trans
+                                  &trans        &none         &trans                                                               &trans       &trans           &trans
             >;
 
             sensor-bindings = <&rgb_encoder>;
+            label = "Space";
         };
     };
 };
